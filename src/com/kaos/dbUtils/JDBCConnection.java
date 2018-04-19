@@ -98,6 +98,9 @@ public class JDBCConnection implements DBConnection{
 			jdbc = new Jdbc(IP, USERNAME, PASSWORD, URL, JDBC_CLASS);
 		}
 	}
+	/**
+	 * Set to true to indicate that the connection is free for allocation
+	 */
 	public void setFree(boolean b) {
 		jdbc.setFree(b);
 	}
