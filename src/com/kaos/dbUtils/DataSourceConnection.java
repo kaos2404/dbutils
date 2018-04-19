@@ -89,6 +89,9 @@ public class DataSourceConnection implements DBConnection{
 	public void shutdownPool(){
 		datasource.shutdownPool();
 	}
+	/**
+	 * Set to true to indicate that the connection is free for allocation
+	 */
 	public void setFree(boolean b) {
 		datasource.setFree(b);
 	}
