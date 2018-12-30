@@ -179,9 +179,7 @@ class Db{
 					throw new RuntimeException("Multiple data will get mapped to same column name");
 				}
 			}
-			if(connection.connector().rs.next()){
-				throw new RuntimeException("Result set returns more than single row");
-			}
+			count++;
 		}
 		connection.connector().ps.close();
 		connection.connector().rs.close();
